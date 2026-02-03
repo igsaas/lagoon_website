@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rivora - Luxury Hotel Booking HTML Template</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper-custom-1.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+    <style>
+        .dining-carousel .item {
+            padding: 0 0.35rem;
+        }
+
+        .dining-carousel img {
+            object-fit: cover;
+            height: 300px;
+        }
+
+        .dining-carousel .slide-meta {
+            margin-top: 1.25rem;
+        }
+
+        .dining-carousel .badge {
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header-light transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="de-flex">
+                        <div class="de-flex-col">
+                            <!-- logo begin -->
+                            <div id="logo">
+                                <a href="index.html">
+                                    <img class="logo-main" src="images/logo-black.webp" alt="" >
+                                    <img class="logo-scroll" src="images/logo-black.webp" alt="" >
+                                    <img class="logo-mobile" src="images/logo-black.webp" alt="" >
+                                </a>
+                            </div>
+                            <!-- logo close -->
+                        </div>
+
+                        <div class="de-flex-col">
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="#">Home</a></li>
+                                    <li><a class="menu-item" href="rooms.html">Room & Suites</a></li>
+                                    <li><a class="menu-item" href="dinning.html">Dining</a></li>
+                                    <li><a class="menu-item" href="offers.html">Special Offers</a></li>
+                                    <li><a class="menu-item" href="gallery.html">Gallery</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="about.html">About Us</a></li>
+                                            <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                            <li><a class="menu-item" href="facilities.html">Facilities</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="de-flex-col">
+                            <div class="menu_side_area">
+                                <a href="reservation.html" class="btn-main fx-slide hover-white"><span>Reservation</span></a>
+                                <span id="menu-btn"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <a href="#" id="back-to-top"></a>
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+        
+        <section class="jarallax text-light relative rounded-1 overflow-hidden mt-80 mt-sm-70 mx-2">
+            <div class="de-gradient-edge-top"></div>
+            <img src="images/background/7.webp" class="jarallax-img" alt="">
+            <div class="container relative z-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="subtitle id-color wow fadeInUp mb-2">Savor Every Moment</div>
+                        <div class="clearfix"></div>
+                        <h2 class="fs-60 fs-xs-8vw wow fadeInUp" data-wow-delay=".4s">Dining Experiences</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="crumb-wrapper">
+                <ul class="crumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Dining</li>
+                </ul>
+            </div>
+            <div class="sw-overlay op-8"></div>
+        </section>
+
+        <div class="rounded-1 overflow-hidden m-2">
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="subtitle id-color mb-2">Taste the Coast</div>
+                            <h3 class="fw-600 mb-3">Dining with the ocean as your backdrop</h3>
+                            <p class="mb-3">At Rivora, dining is designed around the rhythms of Koh Rong’s coastline. From sunlit breakfasts on the terrace to candlelit dinners by the waves, each meal is rooted in locally sourced seafood, tropical produce, and bold culinary techniques.</p>
+                            <p class="mb-4">Whether you arrive for a quick coffee, a celebratory banquet, or a chef-led tasting, our team curates every detail so you can fully unwind.</p>
+                            <div class="row g-3">
+                                <div class="col-12 d-flex align-items-start">
+                                    <i class="icofont-check-circled id-color fs-18 me-2"></i><span>Seasonal tasting menus updated monthly</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-start">
+                                    <i class="icofont-check-circled id-color fs-18 me-2"></i><span>Open-kitchen experiences with panoramic views</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-start">
+                                    <i class="icofont-check-circled id-color fs-18 me-2"></i><span>Private dining, beachside lounges, and VIP catering</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="relative overflow-hidden rounded-1">
+                                <img src="images/misc/s4.webp" class="w-100" alt="Dining terrace">
+                                <div class="de-gradient"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-lg-7">
+                            <div class="subtitle id-color mb-1">See the flavors</div>
+                            <h3 class="fw-600 mb-2">Slide through culinary highlights</h3>
+                            <p class="mb-0">Swipe to preview the dishes shaping our dining story—each plate inspired by the sea and crafted for sharing.</p>
+                        </div>
+                        <div class="col-lg-5 text-lg-end">
+                            <p class="mb-0 fs-14 text-muted">Drag or tap the cards to slide across our seasonal menu.</p>
+                        </div>
+                    </div>
+                    <div class="position-relative mt-4">
+                        <div class="overflow-hidden rounded-2 border border-1 border-white py-4 px-1">
+                            <div class="owl-custom-nav menu-float" data-target="#dining-carousel">
+                                <a class="btn-next"></a>
+                                <a class="btn-prev"></a>
+                                <div id="dining-carousel" class="owl-2-cols-m10 owl-carousel owl-theme dining-carousel">
+                                    <div class="item">
+                                        <div class="relative">
+                                            <div class="rounded-1 overflow-hidden">
+                                                <img src="images/gallery/8.webp" class="w-100" alt="Charcoal sea bass tacos">
+                                            </div>
+                                        </div>
+                                        <div class="slide-meta pt-3 px-2">
+                                            <div class="badge bg-dark text-white rounded-pill px-3 py-1 mb-2">Coastal Grill staple</div>
+                                            <h4 class="mb-1">Charcoal sea bass tacos</h4>
+                                            <p class="mb-0 text-muted">Fresh catch, smoky char, and tropical salsa on handmade tortillas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="relative">
+                                            <div class="rounded-1 overflow-hidden">
+                                                <img src="images/gallery/7.webp" class="w-100" alt="Coconut pandan waffles">
+                                            </div>
+                                        </div>
+                                        <div class="slide-meta pt-3 px-2">
+                                            <div class="badge bg-dark text-white rounded-pill px-3 py-1 mb-2">Sea Terrace brunch</div>
+                                            <h4 class="mb-1">Coconut pandan waffles</h4>
+                                            <p class="mb-0 text-muted">Light, fragrant waffles with mango compote and toasted coconut.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="relative">
+                                            <div class="rounded-1 overflow-hidden">
+                                                <img src="images/gallery/5.webp" class="w-100" alt="Smoked lobster crudo">
+                                            </div>
+                                        </div>
+                                        <div class="slide-meta pt-3 px-2">
+                                            <div class="badge bg-dark text-white rounded-pill px-3 py-1 mb-2">Chef’s tasting</div>
+                                            <h4 class="mb-1">Smoked lobster crudo</h4>
+                                            <p class="mb-0 text-muted">Citrus, Thai basil, and cold-smoked lobster finished with chili oil.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="relative">
+                                            <div class="rounded-1 overflow-hidden">
+                                                <img src="images/gallery/10.webp" class="w-100" alt="Charred pineapple ceviche">
+                                            </div>
+                                        </div>
+                                        <div class="slide-meta pt-3 px-2">
+                                            <div class="badge bg-dark text-white rounded-pill px-3 py-1 mb-2">Hidden Bar nibble</div>
+                                            <h4 class="mb-1">Charred pineapple ceviche</h4>
+                                            <p class="mb-0 text-muted">Sweet pineapple, jalapeño, and house citrus crema for a playful bite.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-light py-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-lg-8">
+                            <h3 class="fw-600">Three dining destinations</h3>
+                            <p class="mb-0">Explore tasting rooms, beach grills, and lounges that reflect the destination’s energetic spirit.</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="border rounded-1 h-100 p-4"> 
+                                <div class="relative overflow-hidden rounded-1 mb-3">
+                                    <img src="images/misc/s5.webp" class="w-100" alt="Coastal Grill">
+                                </div>
+                                <h4 class="mb-2">Coastal Grill</h4>
+                                <p class="mb-3">Wood-fired seafood, charcoal steaks, and a signature rum bar overlooking the water.</p>
+                                <p class="mb-0"><strong>Hours:</strong> 07:00–22:00 • <strong>Dress code:</strong> Resort smart</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="border rounded-1 h-100 p-4">
+                                <div class="relative overflow-hidden rounded-1 mb-3">
+                                    <img src="images/misc/s6.webp" class="w-100" alt="Sea Terrace">
+                                </div>
+                                <h4 class="mb-2">Sea Terrace</h4>
+                                <p class="mb-3">An airy bistro with sunrise breakfasts and light lunches complemented by curated teas and craft coffees.</p>
+                                <p class="mb-0"><strong>Hours:</strong> 06:30–16:00 • <strong>Specialty:</strong> Pastry flight</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="border rounded-1 h-100 p-4">
+                                <div class="relative overflow-hidden rounded-1 mb-3">
+                                    <img src="images/misc/s7.webp" class="w-100" alt="Hidden Bar">
+                                </div>
+                                <h4 class="mb-2">Hidden Bar</h4>
+                                <p class="mb-3">An intimate lounge serving chef-crafted cocktails, rare spirits, and tapas-style bites after sunset.</p>
+                                <p class="mb-0"><strong>Hours:</strong> 18:00–01:00 • <strong>Vibe:</strong> Live acoustic sessions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-7">
+                            <h3 class="fw-600 mb-3">Chef’s tasting journey</h3>
+                            <p class="mb-4">Led by Chef Linh Pham, our tasting menu pairs locally sourced catch with botanicals and smoke. Each six-course experience adapts nightly—expect surprise seafood crudos, charcoal-grilled vegetables, and tropical dessert pairings with single-estate coffee.</p>
+                            <a href="reservation.html" class="btn-main fx-slide hover-white"><span>Book the tasting</span></a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="border rounded-1 p-4 text-center">
+                                        <div class="fs-24 fw-bold mb-1">06</div>
+                                        <p class="mb-0 text-uppercase fs-13 letter-spacing-1">Courses per tasting</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border rounded-1 p-4 text-center">
+                                        <div class="fs-24 fw-bold mb-1">24</div>
+                                        <p class="mb-0 text-uppercase fs-13 letter-spacing-1">Winemakers & distillers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-light py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h3 class="fw-600 mb-2 text-dark">Private events & beachfront catering</h3>
+                            <p class="mb-0 text-dark">Celebrate engagements, intimate meetings, and island weddings with bespoke menus, dedicated sommeliers, and flexible setups across our terraces and salons.</p>
+                        </div>
+                        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                            <a href="contact.html" class="btn-main fx-slide hover-white"><span>Plan an event</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    
+    <footer class="text-light section-dark m-2 mt-0 rounded-1">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-12">
+                    <div class="d-lg-flex align-items-center justify-content-between text-center">
+                        <div>
+                            <h3 class="fs-20">Address</h3>
+                            742 Evergreen Terrace<br>
+                            Brooklyn, NY 11201
+                        </div>
+                        <div>
+                            <img src="images/logo-white.webp" class="w-150px" alt=""><br>
+                            <div class="social-icons mb-sm-30 mt-4">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <h3 class="fs-20">Contact Us</h3>
+                            T. +929 333 9296<br>
+                            M. contact@rivora.com
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        Copyright 2026 - Rivora by Designesia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <!-- swiper slider -->
+    <script src="js/swiper.js"></script>
+
+
+</body>
+
+</html>
